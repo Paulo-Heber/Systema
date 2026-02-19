@@ -1,7 +1,12 @@
 import './App.css'
-import { FaCoins } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
+// ---------------IMPORT-COMPONENTS----------------
 import { CaptalCads } from './components/CaptalCards/captalCards';
+
+// ---------------IMPORT-ICONS----------------
+import { FaCoins, FaTools } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdOutlineShoppingBag } from "react-icons/md";
+import { PiRanking, PiTarget, PiHexagonBold } from "react-icons/pi";
 
 function App() {
   return (
@@ -10,8 +15,8 @@ function App() {
 
         {/* ------------HEADER---------------- */}
         <div className="menu-header">
-          <FaCoins className="menu-icon" />
-          <GiHamburgerMenu className="menu-hamburger" />
+          <FaCoins className="icon" />
+          <GiHamburgerMenu className="icon" />
         </div>
 
         {/* --------BODY---------------- */}
@@ -22,11 +27,11 @@ function App() {
           {/* ---------TAB BAR---------------- */}
 
           <ul className="tab-bar-container">
-            <li className="tab-bar-item">Capitais</li >
-            <li className="tab-bar-item">Ferramentas</li >
-            <li className="tab-bar-item">Loja</li >
-            <li className="tab-bar-item">Rankin</li >
-            <li className="tab-bar-item">Missões</li >
+            <li className="tab-bar-item"><PiHexagonBold /></li >
+            <li className="tab-bar-item"><FaTools /></li >
+            <li className="tab-bar-item"><MdOutlineShoppingBag /></li >
+            <li className="tab-bar-item"><PiRanking /></li >
+            <li className="tab-bar-item"><PiTarget /></li >
           </ul>
 
         </div>

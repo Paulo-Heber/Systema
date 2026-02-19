@@ -1,14 +1,14 @@
 #root {
   max-width: 1280px;
   width: 100%;
+  
   /* text-align: center; */
 
 }
 
 .menu-container {
   max-width: 1440px;
-  background-color: black;
-  height: 100vh;
+min-height: 100vh;
   scrollbar-width: none;
 }
 
@@ -19,10 +19,57 @@
 .menu-header {
   display: flex;
   justify-content: space-between;
+  background-color: #FCFCFC;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem;
+  margin-bottom: 1.7rem;
+}
+
+.icon {
+  font-size: 2.2rem;
+  margin: 1rem;
+  color: #393939;
 }
 
 .menu-body {
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  position: relative;
+  justify-content: center;
+}
+
+.tab-bar-container {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 1.3rem 1.5rem;
+  border-radius: 2.5rem;
+  font-size: 1.4rem;
+  position: fixed;
+  color: black;
+  display: flex;
+  z-index: 1000;
+  bottom: 3rem;
+  opacity: 0.9;
+  left: 50%;
+  gap: 2rem;
+}
+
+.tab-bar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  /* tamanho grande para visibilidade */
+  color: #393939;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.tab-bar-item:hover {
+  transform: scale(1.2);
+  /* animação leve ao passar mouse */
+  color: #9CCFDF;
+  /* muda a cor ao hover (opcional) */
 }

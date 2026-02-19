@@ -1,19 +1,52 @@
 .captais-card-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.7rem;
+    color:#393939;
 }
 
 .captal-card {
     display: flex;
-    background-color: red;
     align-items: center;
     padding: 1rem;
     gap: 1rem;
     border-radius: 1rem;
+    justify-content: space-evenly;
+    background-color: var(--card-color);
+}
+
+.captal-icon-container {
+    font-size: 2.7rem;
+    padding: 0 1rem;
 }
 
 .captal-icon {
-    font-size: 1.5rem;
-    color: white;
+    font-size: 2.7rem;
+}
+
+.captal-info {
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.progress-bar-status {
+    display: flex;
+    gap: 1.1rem;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: color-mix(in srgb, var(--card-color) 80%, black);
+    border-radius: 10px;
+    overflow: hidden;
+    /* border: 1px solid; */
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: color-mix(in srgb, var(--card-color) 65%, white);
+    border-radius: 10px;
+    transition: width 0.4s ease;
 }
